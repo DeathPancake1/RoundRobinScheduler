@@ -86,6 +86,9 @@ void enqueue(Queue *q, Process x)
  */
 void destroy(Queue *q)
 {
+    while(!isEmpty(q)){
+        dequeue(q);
+    }
     free(q);
 }
 int toDigit(char *str){
@@ -157,6 +160,7 @@ void RoundRobin(char* filename)
         }
         currentSlot++;
     }
+    destroy(q);
     printf("stop\n");
     fclose(f);
 }

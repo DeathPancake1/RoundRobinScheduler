@@ -1,0 +1,4 @@
+Watching time slots = 10
+p1 1 3
+p2 1 3
+p3 1 3
